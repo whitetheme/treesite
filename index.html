@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крутые ресурсы</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #f8bb22;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-casino {
+            background: linear-gradient(45deg, #ff9500, #ff5e00);
+            color: white;
+        }
+        
+        .btn-telegram {
+            background: linear-gradient(45deg, #0088cc, #00aced);
+            color: white;
+        }
+        
+        .btn-youtube {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        .money-icon {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .telegram-icon {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+        }
+        
+        .youtube-icon {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .circle:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 5%;
+        }
+        
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            bottom: 15%;
+            right: 10%;
+        }
+        
+        .circle:nth-child(3) {
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            left: 20%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="decoration">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    <div class="container">
+        <h1>Выберите ресурс</h1>
+        
+        <a href="https://1wmndv.life/v3/aggressive-casino?p=qq4r" class="btn btn-casino">
+            <i class="fas fa-coins icon"></i>
+            КАЗИНО 1WIN
+            <i class="fas fa-money-bill-wave money-icon"></i>
+        </a>
+        
+        <a href="https://t.me/+Ez-v1U9kR1sxMjVl" class="btn btn-telegram">
+            <i class="fab fa-telegram icon"></i>
+            ТЕЛЕГРАММ КАНАЛ
+            <i class="fab fa-telegram telegram-icon"></i>
+        </a>
+        
+        <a href="https://www.youtube.com/@ЛУЧШИЕ_КАЗИНО_ЗАНОСЫ" class="btn btn-youtube">
+            <i class="fab fa-youtube icon"></i>
+            ЮТУБ С ЗАНОСАМИ
+            <i class="fas fa-bolt youtube-icon"></i>
+        </a>
+    </div>
+</body>
+</html>
